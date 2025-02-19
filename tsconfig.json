@@ -1,0 +1,11 @@
+{
+	"extends": "@aerofoil/tsconfig/base.json",
+	"include": ["./src/**/*", "./build.ts"],
+	"exclude": ["node_modules"],
+	"compilerOptions": {
+		"baseUrl": "./",
+		"paths": {
+			"~/*": ["src/*"]
+		}
+	}
+}

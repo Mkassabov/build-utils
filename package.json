@@ -1,0 +1,58 @@
+{
+	"name": "@228-fund/build-utils",
+	"version": "1.0.2",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "node ./build.ts"
+	},
+	"type": "module",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"exports": {
+		"./pulumi": {
+			"import": "./dist/pulumi/index.js",
+			"types": "./dist/pulumi/index.d.ts"
+		},
+		"./cloudflare/build": {
+			"import": "./dist/cloudflare/build/build.js",
+			"types": "./dist/cloudflare/build/build.d.ts"
+		},
+		"./cloudflare/generateConfig": {
+			"import": "./dist/cloudflare/build/generateConfig.js",
+			"types": "./dist/cloudflare/build/generateConfig.d.ts"
+		},
+		"./cloudflare/bindings": {
+			"import": "./dist/cloudflare/bindings/bindings.js",
+			"types": "./dist/cloudflare/bindings/bindings.d.ts"
+		},
+		"./cloudflare/bindings/lib": {
+			"import": "./dist/cloudflare/bindings/lib.js",
+			"types": "./dist/cloudflare/bindings/lib.d.ts"
+		}
+	},
+	"peerDependencies": {
+		"@pulumi/cloudflare": "5.45.0",
+		"@pulumi/pulumi": "3.144.1"
+	},
+	"devDependencies": {
+		"@aerofoil/tsconfig": "D:/Code/228/aerofoil/aerofoil-3/libraries/tsconfig",
+		"@biomejs/biome": "1.9.4",
+		"@pulumi/cloudflare": "5.45.0",
+		"@pulumi/pulumi": "3.144.1",
+		"@types/node": "22.10.2",
+		"typescript": "5.7.2"
+	},
+	"dependencies": {
+		"@aerofoil/build-tools": "D:/Code/228/aerofoil/aerofoil-3/libraries/build-tools",
+		"@aerofoil/json-to-toml": "D:/Code/228/aerofoil/aerofoil-3/libraries/json-to-toml",
+		"@aerofoil/logger": "D:/Code/228/aerofoil/aerofoil-3/libraries/logger",
+		"@cloudflare/workers-types": "4.20241224.0",
+		"@pulumi/std": "^1.7.3",
+		"esbuild": "^0.24.2",
+		"pathe": "^1.1.2",
+		"simple-git": "^3.27.0",
+		"undici": "^7.2.0"
+	}
+}

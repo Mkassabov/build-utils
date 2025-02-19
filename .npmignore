@@ -1,0 +1,11 @@
+# dependencies
+node_modules
+
+# input
+src
+.gitignore
+.gitattributes
+.pnpmfile.cjs
+biome.json
+build.ts
+TODO.md

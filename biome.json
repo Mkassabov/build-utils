@@ -1,0 +1,36 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"formatter": {
+		"enabled": true,
+		"lineWidth": 80,
+		"formatWithErrors": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"correctness": {
+				"noUnusedImports": "error",
+				"noUnusedVariables": "error",
+				"noUndeclaredVariables": "error"
+			},
+			"suspicious": {
+				"noExplicitAny": "error",
+				"useAwait": "error",
+				"noImplicitAnyLet": "error"
+			},
+			"style": {
+				"noImplicitBoolean": "error",
+				"useCollapsedElseIf": "error",
+				"useNamingConvention": "error",
+				"useBlockStatements": "error",
+				"noNegationElse": "error",
+				"noNamespace": "error",
+				"useImportType": "error"
+			}
+		}
+	}
+}
